@@ -22,7 +22,7 @@ public class GraphTest {
         arrGraph.insertEdge(2, 6, 1);
         arrGraph.insertEdge(5, 6, 1);
 
-        arrGraph.printGraph();
+//        arrGraph.printGraph();
 
         System.out.println("深度度优先遍历");
         arrGraph.dfs();

@@ -111,6 +111,7 @@ public class LinkedGraph<T> implements IGraph<T> {
 
     @Override
     public void dfs() {
+        clearCheck();
         for (Node<?> node : nodes) {
             dfs(node);
         }
@@ -138,6 +139,7 @@ public class LinkedGraph<T> implements IGraph<T> {
      */
     @Override
     public void bfs() {
+        clearCheck();
         for (Node<?> node : nodes) {
             checkedAndPrint(node);
             NodeSide side = node.firstSide;
@@ -153,6 +155,12 @@ public class LinkedGraph<T> implements IGraph<T> {
         if (!node.isChecked) {
             System.out.print(node.item + "==>");
             node.isChecked = true;
+        }
+    }
+
+    private void clearCheck(){
+        for (Node<?> node : nodes) {
+            node.isChecked = false;
         }
     }
 }

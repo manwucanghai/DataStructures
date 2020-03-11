@@ -6,13 +6,14 @@ package com.zws.test;
  */
 public class BinTest {
     public static void main(String[] args) throws Exception{
-        printBin(100);
+        printBin(Integer.MAX_VALUE);
 //        long start = System.currentTimeMillis();
 //        getTotalNum(100);
-        int num = getOneNum(100);
-        System.out.println(num);
-        Thread.sleep(1000000);
+//        int num = getOneNum(100);
+//        System.out.println(num);
+//        Thread.sleep(1000000);
 //        System.out.println(System.currentTimeMillis() - start);
+//        11111111 11111111 11111111 1111111
     }
 
 

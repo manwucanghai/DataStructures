@@ -46,6 +46,7 @@ public class FloydAlgroithm {
 
     public void floyd() {
         // 变量保存两点间的距离
+        // k为中间节点，i为起始节点，j为终点.
         int len = 0;
         for (int k = 0; k < nodeSize; k++) {
             for (int i = 0; i < nodeSize; i++) {

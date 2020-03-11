@@ -1,6 +1,7 @@
 package com.zws.algorithm.sort;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * 堆排序
@@ -58,12 +59,13 @@ public class HeapSort {
 
 
     public static void main(String[] args) {
-        int[] arr = {9, 4, 2, 5, -1, 0, -30, 15, 12};
-        HeapSort.sort(arr);
-        System.out.println(Arrays.toString(arr));
-        /**
-         * 输出：
-         * [-30, -1, 0, 2, 4, 5, 9, 12, 15]
-         */
+        int[] arr = new int[40];
+        Random random = new Random();
+        for (int i = 0; i < 40; i++) {
+            arr[i] = random.nextInt(300);
+        }
+        System.out.println("排序前：" + Arrays.toString(arr));
+        sort(arr);
+        System.out.println("排序后：" + Arrays.toString(arr));
     }
 }
